@@ -3,7 +3,9 @@
 		<div class="ArticlePicture__Image">
 			<img :src="require('../image/' + article__data.image)" alt=''>
 		</div>
-			<p class="ArticlePicture__Title">{{ article__data.title }}</p>
+			<a href="/articles-id">
+				<p class="ArticlePicture__Title">{{ article__data.title }}</p>
+			</a>
 	</div>
 </template>
 

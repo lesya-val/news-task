@@ -5,19 +5,21 @@
         <nav class="Navigation">
           <div class="Navigation__Logo">
             <h2 class="Navigation__Logo--Title">
-              <a href="">Лента добра</a>
+              <a href="/">Лента добра</a>
             </h2>
           </div>
           <ul class="Navigation__List">
             <li class="Navigation__Item">
-              <a href="" class="Navigation__Link">Все статьи</a>
+              <a href="/articles" class="Navigation__Link">Все статьи</a>
             </li>
             <li class="Navigation__Item">
-              <a href="" class="Navigation__Link">Профиль</a>
+              <a href="/profile" class="Navigation__Link">Профиль</a>
             </li>
           </ul>
         </nav>
-        <button class="HeaderSection__Button">Войти</button>
+				<form action="/login">
+					<button class="HeaderSection__Button">Войти</button>
+				</form>
       </div>
     </MyContainer>
   </div>

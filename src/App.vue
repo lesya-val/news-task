@@ -1,20 +1,20 @@
 <template>
 	<div id="app">
-		<mainPage/>
+		<router-view/>
 	</div>
 </template>
 
 <script>
 
-	import mainPage from '@/pages/MainPage.vue'
-
 	export default {
 		name: 'app',
 		components: {
-			mainPage
 		}
 	}
 </script>
 
 <style>
+	.app {
+		background-color: #FFFFF1;
+	}
 </style>
