@@ -1,11 +1,9 @@
 <template>
   <div class="MainSection">
-    <MyContainer>
-      <div class="MainSection__Wrapper">
-        <mainArticles/>
-        <mainNews/>
-      </div>
-    </MyContainer>
+		<div class="MainSection__Wrapper">
+			<mainArticles/>
+			<mainNews/>
+		</div>
   </div>
 </template>
 
@@ -27,14 +25,3 @@
     }
   }
 </script>
-
-<style lang='scss'>
-  .MainSection {
-    &__Wrapper {
-      display: flex;
-			align-items: center;
-      justify-content: space-between;
-			column-gap: 20px;
-    }
-  }
-</style>

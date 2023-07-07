@@ -1,6 +1,6 @@
 <template>
   <div class="ArticlesItemPage">
-		<h1>Страница статьи</h1>
+		<h1>Страница статьи c ID = {{ $route.params.id }}</h1>
 	</div>
 </template>
 

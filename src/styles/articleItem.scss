@@ -1,0 +1,18 @@
+.ArticlePicture {
+  display: flex;
+  flex-basis: 30%;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: 0 0 8px #57230b;
+  padding: 10px 20px;
+
+	&__Image {
+		margin-bottom: 10px;
+	}
+
+  &__Image img {
+    max-width: 250px;
+		height: auto;
+  }
+}
