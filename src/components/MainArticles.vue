@@ -1,8 +1,8 @@
 <template>
   <div class="MainArticles">
     <div class="MainArticles__Wrapper">
-      <articlePicture
-        class="MainArticles__ArticlePicture"
+      <ArticleItem
+        class="MainArticles__ArticleItem"
         v-for="article in articles"
         :key="article.id"
         :article__data="article"
@@ -12,12 +12,12 @@
 </template>
 
 <script>
-import articlePicture from "@/components/ArticlePicture.vue";
+import ArticleItem from "@/components/ArticleItem.vue";
 
 export default {
   name: "MainArticles",
   components: {
-    articlePicture,
+    ArticleItem,
   },
   data() {
     return {

@@ -2,7 +2,7 @@
   <div class="MainNews">
     <div class="MainNews__Wrapper">
       <h3 class="MainNews__Title">{{title}}</h3>
-      <articlePicture
+      <ArticleItem
         class="MainArticles__Item"
         v-for="article in articles"
         :key="article.id"
@@ -14,12 +14,12 @@
 
 <script>
 
-  import articlePicture from '@/components/ArticlePicture.vue';
+  import ArticleItem from '@/components/ArticleItem.vue';
   
   export default {
     name: 'MainNews',
     components: {
-      articlePicture,
+      ArticleItem,
     },
     data () {
       return {
