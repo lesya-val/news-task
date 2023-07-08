@@ -27,20 +27,3 @@
 		}
 	}
 </script>
-
-<style lang="scss">
-	.LoginPage {
-		&__Wrapper {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			row-gap: 30px;
-			margin-top: 100px;
-		}
-
-		&__Title {
-			font-size: 25px;
-		}
-	}
-</style>
