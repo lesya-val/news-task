@@ -10,6 +10,7 @@
 	import headerSection from '@/components/HeaderSection.vue'
   import mainSection from '@/components/MainSection.vue'
 
+
 	export default {
 		name: 'MainPage',
 		components: {
