@@ -7,31 +7,42 @@ import ProfilePage from '@/pages/ProfilePage.vue'
 import LoginPage from '@/pages/LoginPage.vue'
 
 const routes = [
-		{
-			path: '/',
-			component: MainPage,
-		},
-		{
-			path: '/articles',
-			component:ArticlesPage,
-		},
-		{
-			path: '/article/:id',
-			component: ArticlesItemPage,
-		},
-		{
-			path: '/profile',
-			component: ProfilePage,
-		},
-		{
-			path: '/login',
-			component: LoginPage,
-		},
-	]
+	{
+		path: '/',
+		component: MainPage,
+	},
+	{
+		path: '/articles',
+		component:ArticlesPage,
+	},
+	{
+		path: '/article/:id',
+		component: ArticlesItemPage,
+	},
+	{
+		path: '/profile',
+		component: ProfilePage,
+		meta: { requiresAuth: true },
+	},
+	{
+		path: '/login',
+		component: LoginPage,
+	},
+]
 
 const router = createRouter({
 	routes,
-	history: createWebHistory(process.env.BASE_URL)
+	history: createWebHistory()
+})
+
+router.beforeEach((to, from, next) => {
+	const isAuthenticated = localStorage.getItem('isAuthenticated')
+  
+	if (to.meta.requiresAuth && !isAuthenticated) {
+		next('/login')
+	} else {
+		next()
+	}
 })
 
 export default router;
