@@ -1,0 +1,21 @@
+.MainNews {
+	&__Wrapper {
+		display: flex;
+		flex-direction: column;
+		row-gap: 20px;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__Item {
+		min-width: 250px;
+	}
+
+	&__Title {
+		font-size: 20px;
+		margin-bottom: 15px;
+		font-weight: 500;
+		letter-spacing: 3px;
+		text-align: center;
+	}
+}

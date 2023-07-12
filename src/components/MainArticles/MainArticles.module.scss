@@ -1,0 +1,11 @@
+.MainArticles {
+  &__Wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 30px;
+		padding-right: 10px;
+    border-right: 1px solid #3b170683;
+  }
+}
