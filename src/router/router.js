@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 import MainPage from '@/pages/MainPage.vue'
 import ArticlesPage from '@/pages/ArticlesPage.vue'
-import ArticlesItemPage from '@/pages/ArticlesItemPage.vue'
+import DetailedArticlePage from '@/pages/DetailedArticlePage.vue'
 import ProfilePage from '@/pages/ProfilePage.vue'
 import LoginPage from '@/pages/LoginPage.vue'
 
@@ -17,7 +17,7 @@ const routes = [
 	},
 	{
 		path: '/article/:id',
-		component: ArticlesItemPage,
+		component: DetailedArticlePage,
 	},
 	{
 		path: '/profile',

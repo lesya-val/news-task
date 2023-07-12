@@ -15,14 +15,7 @@
 		components: {
 			headerSection,
 			profileSection,
-		},
-		data () {
-			return {
-				
-			}
 		}
 	}
-</script>
 
-<style>
-</style>
+</script>

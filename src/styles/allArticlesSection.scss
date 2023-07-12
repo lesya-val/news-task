@@ -1,8 +1,10 @@
 .Articles{
 	&__Wrapper {
 		display: flex;
-		align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
 		justify-content: space-between;
-		column-gap: 20px;
+    column-gap: 30px;
+    row-gap: 30px;
 	}
 }
