@@ -9,7 +9,6 @@
         <p :class="$styles.ProfileSection__Auth_Login">Логин: {{ user }}</p>
         <p :class="$styles.ProfileSection__Auth_Password">Пароль: {{ password }}</p>
       </div>
-			<button :class="$styles.ProfileSection__Button" @click="logout">Выйти</button>
     </div>
     <div :class="$styles.ProfileSection__MyArticles">
       <h2 :class="$styles.ProfileSection__MyArticles_Title">Мои сохраненные статьи</h2>
@@ -58,12 +57,6 @@ export default {
 				},
 			],
 		}
-	},
-	methods: {
-		logout() {
-			localStorage.removeItem('isAuthenticated');
-			this.$router.push('/login');
-		},
-	},
+	}
 }
 </script>

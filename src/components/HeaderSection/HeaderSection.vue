@@ -17,7 +17,9 @@
 				</ul>
 			</nav>
 			<form>
-				<button :class="$styles.HeaderSection__Button" @click="login">Войти</button>
+				<button :class="$styles.HeaderSection__Button" @click="login">
+					{{ isAuthenticated ? 'Выйти' : 'Войти' }}
+				</button>
 			</form>
 		</div>
   </div>
@@ -31,16 +33,18 @@ export default {
 	data() {
 		return {
 			$styles: styles,
+			isAuthenticated: localStorage.getItem('isAuthenticated') === 'true',
 		}
 	},
 	methods: {
 		login() {
-      const isAuthenticated = localStorage.getItem('isAuthenticated');
-      if (isAuthenticated === 'true') {
-        this.$router.push('/profile');
-      } else {
-        this.$router.push('/login');
-      }
+			if (this.isAuthenticated) {
+				localStorage.removeItem('isAuthenticated');
+				this.isAuthenticated = false;
+				this.$router.push('/login');
+			} else {
+				this.$router.push('/login');
+			}
     }
 	}
 }
