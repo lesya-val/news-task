@@ -8,11 +8,11 @@
 					</h2>
 				</div>
 				<ul class="Navigation__List">
-					<li class="Navigation__Item">
-						<a href="/articles" class="Navigation__Link">Все статьи</a>
+					<li class="Navigation__List--Item">
+						<a href="/articles" class="Navigation__List--Link">Все статьи</a>
 					</li>
-					<li class="Navigation__Item">
-						<a href="/profile" class="Navigation__Link">Профиль</a>
+					<li class="Navigation__List--Item">
+						<a href="/profile" class="Navigation__List--Link">Профиль</a>
 					</li>
 				</ul>
 			</nav>
@@ -25,14 +25,8 @@
 
 <script>
 
-  export default {
-    name: 'HeaderSection',
-    components: {
-    },
-    data () {
-      return {
-        
-      }
-    }
-  }
+export default {
+	name: 'HeaderSection'
+}
+
 </script>

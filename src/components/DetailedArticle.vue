@@ -22,7 +22,8 @@
 
 <script>
 
-	export default {
-		name: 'DetailedArticle'
-	}
-	</script>
+export default {
+	name: 'DetailedArticle'
+}
+
+</script>

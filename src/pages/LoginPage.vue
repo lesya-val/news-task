@@ -11,19 +11,15 @@
 
 <script>
 
-	import headerSection from '@/components/HeaderSection.vue';
-	import loginForm from '@/components/LoginForm.vue'
+import headerSection from '@/components/HeaderSection.vue';
+import loginForm from '@/components/LoginForm.vue'
 
-	export default {
-		name: 'LoginPage',
-		components: {
-			headerSection,
-			loginForm,
-		},
-		data () {
-			return {
-				
-			}
-		}
+export default {
+	name: 'LoginPage',
+	components: {
+		headerSection,
+		loginForm,
 	}
+}
+
 </script>

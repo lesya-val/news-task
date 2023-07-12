@@ -1,23 +1,21 @@
 <template>
   <div class="ProfilePage">
-		<h1>Страница профиля</h1>
+		<headerSection/>
+		<profileSection/>
 	</div>
 </template>
 
 <script>
 
+	import headerSection from '@/components/HeaderSection.vue'
+	import profileSection from '@/components/ProfileSection.vue'
+
 	export default {
 		name: 'ProfilePage',
 		components: {
-			
-		},
-		data () {
-			return {
-				
-			}
+			headerSection,
+			profileSection,
 		}
 	}
-</script>
 
-<style>
-</style>
+</script>

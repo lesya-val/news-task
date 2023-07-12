@@ -1,20 +1,20 @@
 <template>
-  <div class="MainPage">
+  <div class="DetailedArticlePage">
 		<headerSection/>
-    <mainSection/>
+		<detailedArticle/>
 	</div>
 </template>
 
 <script>
 
 import headerSection from '@/components/HeaderSection.vue'
-import mainSection from '@/components/MainSection.vue'
+import detailedArticle from '@/components/DetailedArticle.vue'
 
 export default {
-	name: 'MainPage',
+	name: 'DetailedArticlePage',
 	components: {
 		headerSection,
-		mainSection,
+		detailedArticle,
 	}
 }
 

@@ -1,7 +1,7 @@
 <template>
   <div class="MainArticles">
     <div class="MainArticles__Wrapper">
-      <ArticleItem
+      <articleItem
         class="MainArticles__ArticleItem"
         v-for="article in articles"
         :key="article.id"
@@ -12,12 +12,13 @@
 </template>
 
 <script>
-import ArticleItem from "@/components/ArticleItem.vue";
+
+import articleItem from "@/components/ArticleItem.vue";
 
 export default {
   name: "MainArticles",
   components: {
-    ArticleItem,
+    articleItem,
   },
   data() {
     return {
@@ -44,55 +45,41 @@ export default {
         {
           id: "4",
           image: null,
-          title: "Красноярцы выберут имя маленькому альпаку",
+          title: "В Дагестане спасли застрявшего в вентиляционной шахте котенка",
         },
 
         {
           id: "5",
           image: null,
-          title:
-            "Выставку-пристройство животных из приютов на ВДНХ перенесли в помещение",
+          title: "Выставку-пристройство животных из приютов на ВДНХ перенесли в помещение",
         },
+
         {
           id: "6",
           image: null,
-          title: "Красноярцы выберут имя маленькому альпаку",
+          title: "С начала года на севере Китая родились более 30 амурских тигрят",
         },
 
         {
           id: "7",
           image: null,
-          title:
-            "Выставку-пристройство животных из приютов на ВДНХ перенесли в помещение",
+          title: "В Ачинске полицейские спасли забежавшую в магазин перепуганную косулю",
         },
 
         {
           id: "8",
           image: null,
-          title:
-            "С начала года на севере Китая родились более 30 амурских тигрят",
+          title: "В аэропорту Внуково нашелся сбежавший неделю назад из переноски кот",
         },
 
         {
           id: "9",
           image: null,
-          title: "В Пермском крае спасли медвежонка-сироту",
-        },
-
-        {
-          id: "10",
-          image: null,
-          title: "В казанском зоопарке родился детеныш лемура",
-        },
-
-        {
-          id: "11",
-          image: null,
-          title:
-            "Пеликаны впервые после зимы вышли на пруд в Московском зоопарке",
+          title: "Пеликаны впервые после зимы вышли на пруд в Московском зоопарке",
         },
       ],
     };
   },
-};
+}
+
 </script>
