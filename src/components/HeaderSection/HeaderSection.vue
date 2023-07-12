@@ -16,8 +16,8 @@
 					</li>
 				</ul>
 			</nav>
-			<form action="/login">
-				<button :class="$styles.HeaderSection__Button">Войти</button>
+			<form>
+				<button :class="$styles.HeaderSection__Button" @click="login">Войти</button>
 			</form>
 		</div>
   </div>
@@ -32,6 +32,16 @@ export default {
 		return {
 			$styles: styles,
 		}
+	},
+	methods: {
+		login() {
+      const isAuthenticated = localStorage.getItem('isAuthenticated');
+      if (isAuthenticated === 'true') {
+        this.$router.push('/profile');
+      } else {
+        this.$router.push('/login');
+      }
+    }
 	}
 }
 </script>
