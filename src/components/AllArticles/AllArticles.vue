@@ -1,8 +1,8 @@
 <template>
-  <div class="AllArticles">
-    <div class="Articles__Wrapper">
+  <div :class="$styles.AllArticles">
+    <div :class="$styles.AllArticles__Wrapper">
       <articleItem
-        class="AllArticles__ArticleItem"
+        :class="$styles.AllArticles__ArticleItem"
         v-for="article in articles"
         :key="article.id"
         :article__data="article"
@@ -12,8 +12,9 @@
 </template>
 
 <script>
+import articleItem from "@/components/ArticleItem/ArticleItem.vue";
 
-import articleItem from "@/components/ArticleItem.vue";
+import styles from '@/components/AllArticles/AllArticles.module.scss'
 
 export default {
   name: "MainArticles",
@@ -54,8 +55,8 @@ export default {
 					title: "Красноярцы выберут имя маленькому альпаку",
 				},
       ],
+			$styles: styles,
     };
   },
 }
-
 </script>

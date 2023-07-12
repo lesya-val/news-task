@@ -1,8 +1,8 @@
 <template>
-  <div class="MainArticles">
-    <div class="MainArticles__Wrapper">
+  <div :class="$styles.MainArticles">
+    <div :class="$styles.MainArticles__Wrapper">
       <articleItem
-        class="MainArticles__ArticleItem"
+				:class="$styles.MainArticles__ArticleItem"
         v-for="article in articles"
         :key="article.id"
         :article__data="article"
@@ -12,8 +12,9 @@
 </template>
 
 <script>
+import articleItem from "@/components/ArticleItem/ArticleItem.vue"
 
-import articleItem from "@/components/ArticleItem.vue";
+import styles from '@/components/MainArticles/MainArticles.module.scss'
 
 export default {
   name: "MainArticles",
@@ -78,8 +79,8 @@ export default {
           title: "Пеликаны впервые после зимы вышли на пруд в Московском зоопарке",
         },
       ],
-    };
+			$styles: styles,
+    }
   },
 }
-
 </script>

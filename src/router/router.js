@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import MainPage from '@/pages/MainPage.vue'
-import ArticlesPage from '@/pages/ArticlesPage.vue'
-import DetailedArticlePage from '@/pages/DetailedArticlePage.vue'
-import ProfilePage from '@/pages/ProfilePage.vue'
-import LoginPage from '@/pages/LoginPage.vue'
+import MainPage from '@/pages/MainPage/MainPage.vue'
+import ArticlesPage from '@/pages/ArticlesPage/ArticlesPage.vue'
+import DetailedArticlePage from '@/pages/DetailedArticlePage/DetailedArticlePage.vue'
+import ProfilePage from '@/pages/ProfilePage/ProfilePage.vue'
+import LoginPage from '@/pages/LoginPage/LoginPage.vue'
 
 const routes = [
 	{
